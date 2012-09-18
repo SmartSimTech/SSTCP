@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BDD70DD-ED10-49E6-A563-9290EDE72410}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSTCP</RootNamespace>
+    <AssemblyName>SSTCP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>c:\sstcp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SSTIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AB12B92E7E65C2731ACBF9FD80776EDBDE342D13</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SSTCP_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v11.2, Version=11.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\dll files\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="FSUIPCClient">
+      <HintPath>..\..\..\dll files\FSUIPCClient.dll</HintPath>
+    </Reference>
+    <Reference Include="HidLibrary">
+      <HintPath>..\..\..\dll files\HidLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mkc_CodeBox">
+      <HintPath>..\..\..\dll files\mkc_CodeBox.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartSimTech.FSUIPC">
+      <HintPath>..\..\..\dll files\SmartSimTech.FSUIPC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TaskDialog">
+      <HintPath>..\..\..\dll files\TaskDialog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boards\PSU\A\frmSSTPSUA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boards\PSU\A\frmSSTPSUA.Designer.cs">
+      <DependentUpon>frmSSTPSUA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boards\SST24O\A\frmSST24OA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boards\SST24O\A\frmSST24OA.Designer.cs">
+      <DependentUpon>frmSST24OA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boards\SST30I\A\frmSST30IA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boards\SST30I\A\frmSST30IA.Designer.cs">
+      <DependentUpon>frmSST30IA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boards\Test\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boards\Test\frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\clsBase64.cs" />
+    <Compile Include="Classes\clsBasicScripting.cs" />
+    <Compile Include="Classes\clsEditCardDetailsDialogType.cs" />
+    <Compile Include="Classes\clsEventLogType.cs" />
+    <Compile Include="Classes\clsUSBData.cs" />
+    <Compile Include="Database\AnalogOutputConfiguration.cs" />
+    <Compile Include="Database\AnalogOutputScripts.cs" />
+    <Compile Include="Database\Cards.cs" />
+    <Compile Include="Database\Registration.cs" />
+    <Compile Include="Database\AnalogInputConfiguration.cs" />
+    <Compile Include="Enum\enumCloseApplicationBox.cs" />
+    <Compile Include="Enum\enumWizard.cs" />
+    <Compile Include="Forms\frmAddCardWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCardWizard.Designer.cs">
+      <DependentUpon>frmAddCardWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAdvancedSettings.Designer.cs">
+      <DependentUpon>frmAdvancedSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAutoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAutoUpdate.Designer.cs">
+      <DependentUpon>frmAutoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCards.Designer.cs">
+      <DependentUpon>frmCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCloseSoftwareBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCloseSoftwareBox.Designer.cs">
+      <DependentUpon>frmCloseSoftwareBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditCardDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditCardDetails.Designer.cs">
+      <DependentUpon>frmEditCardDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOutputScriptWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOutputScriptWizard.Designer.cs">
+      <DependentUpon>frmOutputScriptWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRegistrationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRegistrationDetails.Designer.cs">
+      <DependentUpon>frmRegistrationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStartPage.Designer.cs">
+      <DependentUpon>frmStartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransparentSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransparentSplash.Designer.cs">
+      <DependentUpon>frmTransparentSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XMLConfiguration\clsAnalogInputConfiguration.cs" />
+    <Compile Include="XMLConfiguration\clsCardConfiguration.cs" />
+    <EmbeddedResource Include="Boards\PSU\A\frmSSTPSUA.resx">
+      <DependentUpon>frmSSTPSUA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boards\SST24O\A\frmSST24OA.resx">
+      <DependentUpon>frmSST24OA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boards\SST30I\A\frmSST30IA.resx">
+      <DependentUpon>frmSST30IA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boards\Test\frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCardWizard.resx">
+      <DependentUpon>frmAddCardWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAdvancedSettings.resx">
+      <DependentUpon>frmAdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAutoUpdate.resx">
+      <DependentUpon>frmAutoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCards.resx">
+      <DependentUpon>frmCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCloseSoftwareBox.resx">
+      <DependentUpon>frmCloseSoftwareBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditCardDetails.resx">
+      <DependentUpon>frmEditCardDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOutputScriptWizard.resx">
+      <DependentUpon>frmOutputScriptWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRegistrationDetails.resx">
+      <DependentUpon>frmRegistrationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStartPage.resx">
+      <DependentUpon>frmStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransparentSplash.resx">
+      <DependentUpon>frmTransparentSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="About Smart Sim Tech.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SSTCP_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSTHeaderImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+    <None Include="Resources\green.png" />
+    <None Include="Resources\CardConnected.ico" />
+    <None Include="Resources\CardNotConnected.ico" />
+    <None Include="Resources\CardDebug.ico" />
+    <None Include="Resources\cardonline_small.png" />
+    <None Include="Resources\cardoffline_small.png" />
+    <None Include="Resources\SmartSimTech2Splash.png" />
+    <None Include="Resources\16x16-GreenApplication.png" />
+    <None Include="Resources\16x16-RedApplication.png" />
+    <None Include="Resources\48x48-Download.png" />
+    <None Include="Resources\48x48-Travel.png" />
+    <None Include="Resources\48x48-Lock.png" />
+    <None Include="Resources\48x48-Database.png" />
+    <Content Include="Resources\SSTSplash2.png" />
+    <SplashScreen Include="Smart-Sim-Tech-Logo-for-web.png" />
+    <None Include="Resources\Window Blue.ico" />
+    <None Include="Resources\Window Green.ico" />
+    <None Include="Resources\Window Red.ico" />
+    <Content Include="SSTIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartSimTech.BasicScriptingCommands\SmartSimTech.BasicScriptingCommands.csproj">
+      <Project>{160252AE-5621-4E76-B1FC-28D69168478A}</Project>
+      <Name>SmartSimTech.BasicScriptingCommands</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
